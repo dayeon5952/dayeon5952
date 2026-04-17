@@ -1,3 +1,5 @@
+# 🛠️ Tech Stack
+
 ## 💻 Language & Frameworks
 
 | Category                | Technologies                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -9,3 +11,10 @@
 | **Styling & CSS**       | ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=TailwindCSS&logoColor=white) ![UnoCSS](https://img.shields.io/badge/UnoCSS-333333?style=for-the-badge&logo=UnoCSS&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **IoT & Embedded**      | ![ESP32](https://img.shields.io/badge/ESP32-92C83E?style=for-the-badge&logo=Espressif&logoColor=white) ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white) ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Backend Services**    | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=Firebase&logoColor=white) ![Figma MCP](https://img.shields.io/badge/Figma%20MCP-F24E1E?style=for-the-badge&logo=Figma&logoColor=white)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+# 📝 Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+<!-- 이 주석 사이에 최신 글 목록이 자동으로 추가됩니다. -->
+<!-- BLOG-POST-LIST:END -->
+
