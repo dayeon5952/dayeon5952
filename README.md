@@ -23,11 +23,9 @@
 ## 📝 Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-
 - [[Frontend] CSR&lpar;Client-Side Rendering&rpar; vs SSR&lpar;Server-Side Rendering&rpar;](https://dayeon5952.github.io//posts/Frontend-CSR-vs-SSR/)
 - [[Frontend] SPA&lpar;Single Page Application&rpar; vs MPA&lpar;Multiple Page Application&rpar;](https://dayeon5952.github.io//posts/Frontend-SPA-vs-MPA/)
 - [[패키지매니저] npm, pnpm, yarn, yarn-berry](https://dayeon5952.github.io//posts/%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A7%A4%EB%8B%88%EC%A0%80-npm,pnpm,yarn,yarn-berry/)
-- [[Javascript] 파일 입·출력&lpar;FileReader&rpar;](<https://dayeon5952.github.io//posts/Javascript-%ED%8C%8C%EC%9D%BC-%EC%9E%85%EC%B6%9C%EB%A0%A5(FileReader)/>)
+- [[Javascript] 파일 입·출력&lpar;FileReader&rpar;](https://dayeon5952.github.io//posts/Javascript-%ED%8C%8C%EC%9D%BC-%EC%9E%85%EC%B6%9C%EB%A0%A5(FileReader)/)
 - [[SQL] SQL 기본 및 활용 3](https://dayeon5952.github.io//posts/SQL-SQL-%EA%B8%B0%EB%B3%B8-%EB%B0%8F-%ED%99%9C%EC%9A%A9-3/)
-
 <!-- BLOG-POST-LIST:END -->
