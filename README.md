@@ -1,4 +1,4 @@
-# [![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans&size=30&pause=1000&color=000000&repeat=false&width=800&lines=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.+%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C+%EC%A4%91%EC%8B%AC%EC%9D%98+%ED%92%80%EC%8A%A4%ED%83%9D+%EA%B0%9C%EB%B0%9C%EC%9E%90+%EB%82%A8%EB%8B%A4%EC%97%B0%EC%9E%85%EB%8B%88%EB%8B%A4.)](https://git.io/typing-svg)
+# 👉 안녕하세요. 웹앱 개발자 남다연입니다.
 
 ## 🛠️ Tech Stack
 
