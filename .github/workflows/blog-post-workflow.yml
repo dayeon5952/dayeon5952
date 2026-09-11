@@ -30,8 +30,9 @@ jobs:
           # 표시할 최대 포스트 개수
           max_post_count: 5
 
-          # 포스트 항목 포맷 (기본값: "- [$title]($url)")
-          template: "- [$title]($url)\n"
+          # 포스트 항목 포맷 - 순수 하이퍼링크 형식: [제목](URL)
+          template: |
+            [$title]($url)
 
           # 커밋 메시지
           commit_message: "Updated blog posts"
