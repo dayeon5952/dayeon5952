@@ -23,3 +23,19 @@ jobs:
         with:
           # 블로그의 RSS 피드 주소를 입력합니다.
           feed_list: 'https://dayeon5952.github.io/feed.xml'
+          
+          # README 파일 경로
+          readme_path: './README.md'
+          
+          # 표시할 최대 포스트 개수
+          max_post_count: 5
+          
+          # 포스트 항목 포맷 (기본값: "- [$title]($url)")
+          template: '- [$title]($url)'
+          
+          # 커밋 메시지
+          commit_message: 'Updated blog posts'
+          
+          # 커밋 작성자
+          committer_username: 'github-actions'
+          committer_email: 'github-actions@github.com'
