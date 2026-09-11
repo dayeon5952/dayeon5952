@@ -18,25 +18,53 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       - name: Pull in blog posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          # 블로그의 RSS 피드 주소를 입력합니다.
           feed_list: "https://dayeon5952.github.io/feed.xml"
-
-          # README 파일 경로
           readme_path: "./README.md"
-
-          # 표시할 최대 포스트 개수
           max_post_count: 5
-
-          # 포스트 항목 포맷 (각 항목 뒤에 줄바꿈 추가)
-          template: "- [$title]($url)\n"
+          template: "- [$title]($url)"
           disable_html_encoding: "true"
-
-          # 커밋 메시지
           commit_message: "Updated blog posts"
-
-          # 커밋 작성자
           committer_username: "github-actions"
           committer_email: "github-actions@github.com"
+      
+      - name: Fix blog post formatting
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let content = fs.readFileSync('./README.md', 'utf8');
+            
+            // HTML 엔티티 디코딩
+            content = content.replace(/&lpar;/g, '(');
+            content = content.replace(/&rpar;/g, ')');
+            content = content.replace(/&lsqb;/g, '[');
+            content = content.replace(/&rsqb;/g, ']');
+            content = content.replace(/&#40;/g, '(');
+            content = content.replace(/&#41;/g, ')');
+            
+            // %0A 를 실제 줄바꿈으로 변환
+            content = content.replace(/ %0A/g, '\n');
+            
+            // 이중 대괄호 제거 ([[ -> [)
+            content = content.replace(/\[\[/g, '[');
+            content = content.replace(/\]\]/g, ']');
+            
+            fs.writeFileSync('./README.md', content);
+            console.log('Blog post formatting fixed!');
+      
+      - name: Commit formatting fixes
+        run: |
+          cd .
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add README.md
+            git commit --amend --no-edit || git commit -m "Fix: Blog post formatting"
+            git push --force-with-lease
+          fi
