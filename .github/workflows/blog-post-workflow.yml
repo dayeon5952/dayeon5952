@@ -30,8 +30,9 @@ jobs:
           # 표시할 최대 포스트 개수
           max_post_count: 5
 
-          # 포스트 항목 포맷
-          template: "- [$title]($url) %0A"
+          # 포스트 항목 포맷 (각 항목 뒤에 줄바꿈 추가)
+          template: "- [$title]($url)\n"
+          disable_html_encoding: "true"
 
           # 커밋 메시지
           commit_message: "Updated blog posts"
