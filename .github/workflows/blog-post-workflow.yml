@@ -46,23 +46,31 @@ jobs:
             content = content.replace(/&#40;/g, '(');
             content = content.replace(/&#41;/g, ')');
             
-            // %0A 를 실제 줄바꿈으로 변환
-            content = content.replace(/ %0A/g, '\n');
+            // BLOG-POST-LIST 섹션 추출
+            const blogPostMatch = content.match(/<!-- BLOG-POST-LIST:START -->([\s\S]*?)<!-- BLOG-POST-LIST:END -->/);
             
-            // 이중 대괄호 제거 ([[ -> [)
-            content = content.replace(/\[\[/g, '[');
-            content = content.replace(/\]\]/g, ']');
-            
-            // 연속된 마크다운 링크들을 줄바꿈으로 분리
-            // ](url)- [ 패턴을 ](url)\n- [ 로 변환
-            content = content.replace(/\]\([^)]+\)- \[/g, (match) => {
-              return match.replace('- [', '\n- [');
-            });
+            if (blogPostMatch) {
+              let blogContent = blogPostMatch[1];
+              
+              // 마크다운 링크들을 분리 (](url)- [ 패턴 찾기)
+              // 먼저 모든 ](url)- [ 패턴을 ](url)\n- [ 로 변환
+              blogContent = blogContent.replace(/\]\(([^)]+)\)- \[/g, ']\($1)\n- [');
+              
+              // %0A도 처리
+              blogContent = blogContent.replace(/ %0A/g, '\n');
+              
+              // 처음과 끝의 공백 정리
+              blogContent = blogContent.trim();
+              
+              // 최종 업데이트
+              content = content.replace(
+                /<!-- BLOG-POST-LIST:START -->[\s\S]*?<!-- BLOG-POST-LIST:END -->/,
+                `<!-- BLOG-POST-LIST:START -->\n${blogContent}\n<!-- BLOG-POST-LIST:END -->`
+              );
+            }
             
             fs.writeFileSync('./README.md', content);
-            console.log('Blog post formatting fixed!');
-            console.log('Fixed content:');
-            console.log(content.substring(0, 500));
+            console.log('✅ Blog post formatting fixed!');
       
       - name: Commit formatting fixes
         run: |
