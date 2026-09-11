@@ -3,7 +3,7 @@ on:
   schedule:
     # 매일 자정(UTC)에 워크플로우를 실행합니다.
     # 리눅스 cron 문법과 동일하며, '0 0 * * *'는 매일 00:00 UTC를 의미합니다.
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
     # GitHub Actions 페이지에서 수동으로 실행할 수 있게 합니다.
 
@@ -22,20 +22,20 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           # 블로그의 RSS 피드 주소를 입력합니다.
-          feed_list: 'https://dayeon5952.github.io/feed.xml'
-          
+          feed_list: "https://dayeon5952.github.io/feed.xml"
+
           # README 파일 경로
-          readme_path: './README.md'
-          
+          readme_path: "./README.md"
+
           # 표시할 최대 포스트 개수
           max_post_count: 5
-          
+
           # 포스트 항목 포맷 (기본값: "- [$title]($url)")
-          template: '- [$title]($url)'
-          
+          template: "- [$title]($url)"
+
           # 커밋 메시지
-          commit_message: 'Updated blog posts'
-          
+          commit_message: "Updated blog posts"
+
           # 커밋 작성자
-          committer_username: 'github-actions'
-          committer_email: 'github-actions@github.com'
+          committer_username: "github-actions"
+          committer_email: "github-actions@github.com"
