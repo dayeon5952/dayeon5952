@@ -31,7 +31,7 @@ jobs:
           max_post_count: 5
 
           # 포스트 항목 포맷 (기본값: "- [$title]($url)")
-          template: "- [$title]($url)"
+          template: "- [$title]($url)\n"
 
           # 커밋 메시지
           commit_message: "Updated blog posts"
