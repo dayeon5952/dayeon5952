@@ -22,10 +22,4 @@
 
 ## 📝 Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
-- [[Frontend] 렌더링 파이프라인 이해와 Reflow/Repaint 최소화 전략](https://dayeon5952.github.io//posts/Frontend-%EB%A0%8C%EB%8D%94%EB%A7%81_%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8_%EC%9D%B4%ED%95%B4%EC%99%80_Reflow_Repaint_%EC%B5%9C%EC%86%8C%ED%99%94_%EC%A0%84%EB%9E%B5/)
-- [[Frontend] CSR(Client-Side Rendering) vs SSR(Server-Side Rendering)](https://dayeon5952.github.io//posts/Frontend-CSR-vs-SSR/)
-- [[Frontend] SPA(Single Page Application) vs MPA(Multiple Page Application)](https://dayeon5952.github.io//posts/Frontend-SPA-vs-MPA/)
-- [[패키지매니저] npm, pnpm, yarn, yarn-berry](https://dayeon5952.github.io//posts/%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A7%A4%EB%8B%88%EC%A0%80-npm,pnpm,yarn,yarn-berry/)
-- [[Javascript] 파일 입·출력(FileReader)](https://dayeon5952.github.io//posts/Javascript-%ED%8C%8C%EC%9D%BC-%EC%9E%85%EC%B6%9C%EB%A0%A5(FileReader)/)
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->- [[Frontend] 렌더링 파이프라인 이해와 Reflow/Repaint 최소화 전략](https://dayeon5952.github.io//posts/Frontend-%EB%A0%8C%EB%8D%94%EB%A7%81_%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8_%EC%9D%B4%ED%95%B4%EC%99%80_Reflow_Repaint_%EC%B5%9C%EC%86%8C%ED%99%94_%EC%A0%84%EB%9E%B5/)- [[Frontend] CSR(Client-Side Rendering) vs SSR(Server-Side Rendering)](https://dayeon5952.github.io//posts/Frontend-CSR-vs-SSR/)- [[Frontend] SPA(Single Page Application) vs MPA(Multiple Page Application)](https://dayeon5952.github.io//posts/Frontend-SPA-vs-MPA/)- [[패키지매니저] npm, pnpm, yarn, yarn-berry](https://dayeon5952.github.io//posts/%ED%8C%A8%ED%82%A4%EC%A7%80%EB%A7%A4%EB%8B%88%EC%A0%80-npm,pnpm,yarn,yarn-berry/)- [[Javascript] 파일 입·출력(FileReader)](https://dayeon5952.github.io//posts/Javascript-%ED%8C%8C%EC%9D%BC-%EC%9E%85%EC%B6%9C%EB%A0%A5(FileReader)/)<!-- BLOG-POST-LIST:END -->
